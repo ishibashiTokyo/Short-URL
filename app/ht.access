@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+# サブディレクトリに展開する場合は
+# RewriteBaseとRewriteRuleに修正を行ってください。
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /redirect_loader.php [L]
+</IfModule>
