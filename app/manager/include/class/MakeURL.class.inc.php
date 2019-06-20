@@ -42,7 +42,7 @@ class MakeURL
 
         // なにも選択されていない場合はすべてを連結して返す
         if ( strlen($this->base_strings) === 0 )
-            return self::ALPHANUMERIC . self::UPPER_LETTER . self::LOWER_LETTER
+            return self::ALPHANUMERIC . self::UPPER_LETTER . self::LOWER_LETTER;
 
         return $this->base_strings;
     }
